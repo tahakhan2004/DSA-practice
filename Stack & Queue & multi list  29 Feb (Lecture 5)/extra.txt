@@ -1,0 +1,181 @@
+// #include <iostream>
+// using namespace std;
+// #include <algorithm>
+// struct stud
+// {
+//     int SID;
+//     stud* next;
+//     int COID;
+// };
+// struct course
+// {
+//     int CID;
+//     course* next;
+//     stud* start;
+// }; 
+//  course* head=NULL;
+
+//  void insertCourse ()
+//  {
+//     course* ptr = (course*) malloc (sizeof(course));
+//         cout<<"enter course ID"<< "\n";
+//         cin >> ptr-> CID;
+//         ptr -> next=NULL;
+//         ptr-> start=NULL;
+//     if (head == NULL)
+//     {
+//         head = ptr;
+//     }
+//     else
+//     {
+//         course* curr = head;
+//             while (curr->next != NULL)
+//             {
+//                 curr= curr->next;
+//             }
+//         curr -> next= ptr;
+//     }
+//  }
+//  stud* top=NULL;
+// void insertStudent ()
+//  {
+//     stud* ptr = (stud*) malloc (sizeof(stud));
+//         cout<<"enter Student ID"<< "\n";
+//         cin >> ptr->SID;
+//         ptr -> next=NULL;
+//         cout<<"enter Course ID you want to be enrolled"<< "\n";
+//         cin >> ptr->COID;
+
+//         course* check = head;
+//         while (ptr->COID!=check->CID)
+//         {
+//             check=check->next;
+//         }
+//         if (check->start==NULL)
+//         {
+//             check->start=ptr; 
+//             cout<<"Enrolled"<<"\n";  
+//         }
+//         else
+//         {
+//             while (check->start->next!=NULL)
+//             {
+//                 check->start=check->start->next;
+//             }
+//             check->start->next=ptr;
+            
+//         }
+//  }        
+
+// void printCourse()
+//  {
+//     if (head == NULL)
+//     {
+//         cout<<"list is ALL empty"<<"\n";
+//     }
+//     else
+//     {
+//         course* curr = head;
+//         while (curr!=NULL)
+//         {
+                    
+//                 cout<<"Course ID is  :  "<<curr->CID << "\n" ;
+//                 cout<<curr->start->SID<<"\n";
+//                 curr = curr->next;
+            
+//         } 
+//     }
+//  }
+//  void printStudent()
+//  {
+//     if (top== NULL)
+//     {
+//         cout<<"list is ALL empty"<<"\n";
+//     }
+//     else
+//     {
+//         stud* curr = top;
+//         while (curr!=NULL)
+//         {
+                    
+//                 cout<<"Student ID is  :  "<<curr->SID << "\n" ;
+//                 curr = curr->next;
+            
+//         } 
+//     }
+//  }
+//  int main()
+//     {
+//         int a;
+//         cout << "if you want to enter Course ID press 1" << "\n";
+//         cout << "if you want to enter Student ID press 2" << "\n";
+//         cout << "if you want to print Courses press 3" << "\n";
+//         cout << "if you want to print Students press 4" << "\n";
+//         cin>>a;
+//         while (a==1 || a==2 || a==3 || a==4 || a== 5 || a==6)
+//         {
+//             if (a==1)
+//             {
+//                 insertCourse ();
+//             }
+        
+//             else if (a==2)
+//             {
+//                 insertStudent();
+//             }
+//             else if (a==3)
+//             {
+//                 printCourse();
+//             }
+//             else if (a==4)
+//             {
+//                 printStudent();
+//             }
+//             // else if (a==5)
+//             // {
+//             //     DeleteAll(&head);   
+//             // }
+            
+            
+//             else if (a==6)
+//             {
+//                 cout<<"thanks for working"<< "\n"<<"RATE MY WORK OUT OF 5:"<<"\n";
+//                 int c =0;
+//                 cin>> c;
+//                 cout << "Ratings  :  "<<c;
+
+//                 break;
+//             }
+              
+//             cout << "if you want to enter Course ID press 1" << "\n";
+//             cout << "if you want to enter Student ID press 2" << "\n";
+//             cout << "if you want to print Courses press 3" << "\n";
+//             cout << "if you want to delete some data press 4" << "\n";
+//             cout << "if you want to delete all data press 5" << "\n";
+//             cout << "if you want to end process press 6" << "\n";
+//             cin>>a;
+//             while (a<1 || a>6)
+//             {
+//                 cout<<"invalid key entered"<<"\n";
+//             cout << "if you want to enter data press 1" << "\n";
+//             cout << "if you want to search data press 2" << "\n";
+//             cout << "if you want to print data press 3" << "\n";
+//             cout << "if you want to delete some data press 4" << "\n";
+//             cout << "if you want to delete all data press 5" << "\n";
+//             cout << "if you want to end process press 6" << "\n";
+//             cin>>a;
+//             }    
+//         }
+           
+//         return 0;
+//     }
+
+
+
+
+
+
+
+
+
+
